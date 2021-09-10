@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialScreen"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    Welcome To Scanner App !"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:id="@+id/capturedImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     Please select any of Below"
+            android:textAlignment="center"
+            android:textColor="#AD000000"
+            android:textSize="25sp"
+            android:layout_marginBottom="40dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/cameraBtn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/camera_icon"/>
+
+        <ImageButton
+            android:id="@+id/gallaryBtn"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/gallery_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>
